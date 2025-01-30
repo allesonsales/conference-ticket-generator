@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/allesonsales/conference-ticket-generator)
-- [Live site URL](https://your-live-site-url.com)
+- [Live site URL](https://allesonsales.github.io/conference-ticket-generator/)
 
 ## My process
 
