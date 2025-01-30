@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+</head>
+<body>
+  <main>
+    <section id="form">
+      <section class="form__first">
+        <div class="form__top">
+          <div class="form__top__img"><img src="./assets/images/logo-full.svg" alt="Logo"></div>
+          <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+          <p>Secure your spot at next year's biggest coding conference.</p>
+        </div>
+      </section>
+      <section class="form__start">
+        <form>
+          <div class="form__input">
+            <span class="form__title">Upload Avatar</span>
+            <div class="form__line" id="avatar__area">
+              <div id="drop-area" class="upload__box">
+                <input type="file" name="file" id="avatar" placeholder="Drag and drop or click to upload" accept="image/jpeg, image/png">
+              </div>
+              <img src="./assets/images/icon-upload.svg" alt="">
+              <div class="message">
+                Drag and drop or click to upload
+              </div>
+            </div>
+            <div class="error-msg" id="upload-message"></div>
+          </div>
+          <div class="form__input">
+            <span class="form__title">Full Name</span>
+            <div class="form__line">
+              <input type="text" name="name" id="name">
+            </div>
+            <div class="error-msg" id="name-message"></div>
+          </div>
+          <div class="form__input">
+            <span class="form__title">Email Adress</span>
+            <div class="form__line">
+              <input type="email" name="email" id="email" placeholder="example@email.com">
+            </div>
+            <div class="error-msg" id="email-message"></div>
+          </div>
+          <div class="form__input">
+            <span class="form__title">GitHub Username</span>
+            <div class="form__line">
+              <input type="text" name="gitname" id="gitname" placeholder="@yourusername">
+            </div>
+            <div class="error-msg" id="github-message"></div>
+          </div>
+          <button type="submit" class="form__submit" id="btnSubmit">Generate My Ticket</button>
+        </form>
+      </section>
+    </section>
+    
+    <!-- Form ends -->
+    <section class="form__ticket hide">
+      <div class="form__top__img"><img src="./assets/images/logo-full.svg" alt="Logo"></div>
+      <h2>Congrats <span class="fullname"></span>! Your ticket is ready.</h2>
+      <p>We've emailed your ticket to <span id="fullemail"></span>and will send updates in the run up to the event.</p>
+      <div class="ticket">
+        <div class="ticket__top">
+          <img src="./assets/images/logo-mark.svg">
+          <div class="ticket__top__text">
+            <span> Coding Conf </span>
+            <p>   Jan 31, 2025 / Austin, TX</p>
+          </div>
+        </div>
+        <div class="ticket__bottom">
+          <div id="ticketavatar">
+            <img src="./assets/images/image-avatar.jpg" alt="Avatar" id="avatar-image">
+          </div>
+          <div class="ticket__bottom__text">
+            <span class="fullname">Jonatan Kristof</span>  
+            <div class="ticket__bottom__github">
+              <img src="./assets/images/icon-github.svg" alt="GitHub User">
+              <span id="github__ticket">Jonatan Kristof</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/allesonsales">Alleson Sales</a>.
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html> 
